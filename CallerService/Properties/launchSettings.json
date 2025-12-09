@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CallerService": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

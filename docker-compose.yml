@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  helloservice:
+    build:
+      context: ./HelloService
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  callerservice:
+    build:
+      context: ./CallerService
+      dockerfile: Dockerfile
+    depends_on:
+      - helloservice
